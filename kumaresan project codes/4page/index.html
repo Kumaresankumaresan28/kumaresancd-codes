@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="3page.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img class="small-image" src="samlogo.jpg" alt="Reduced Image">
+        </div>
+        <div class="option flex">
+          <img src="image/p1.jpg" onclick="img('image/p1.jpg')">
+          <img src="image/p2.jpg" onclick="img('image/p2.jpg')">
+          <img src="image/p3.jpg" onclick="img('image/p3.jpg')">
+          <img src="image/p4.jpg" onclick="img('image/p4.jpg')">
+          <img src="image/p5.jpg" onclick="img('image/p5.jpg')">
+          <img src="image/p6.jpg" onclick="img('image/p6.jpg')">
+        </div>
+      </div>
+      <div class="right">
+        <h3>Product Details</h3>
+        <h5>Samsung Galaxy M53 5G</h5>
+        <br>
+        <div class="verified-button">
+            <button class="verify-btn">✓ Verified User</button>
+    
+        </div>
+        <br>
+        <h4> <small>$</small><s>Old Price :1200..99</s></h4>
+        <br>
+        <h4> <small>$</small> New Price :999.99 </h4>
+        <p>Only use the Samsung S Pen Pro or the S Pen Fold Edition designed exclusively for Galaxy Z Fold3 5G. All other S Pens or stylus pens not designed for Galaxy Z Fold3 5G (including those by other manufacturers) may damage the screen.</p>
+        <h5>Color-Rose Gold</h5>
+        <div class="color flex1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h5>Number</h5>
+        <div class="add flex1">
+          <span>-</span>
+          <label>1</label>
+          <span>+</span>
+        </div>
+        <button>Place Your Order</button>
+      </div>
+    </div>
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>
